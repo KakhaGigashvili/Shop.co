@@ -5,7 +5,7 @@ import styles from '../fonts.module.scss'
 export default () => {
     return(
         <div className="flex justify-center">
-        <header className="w-[1240px] h-[48px] flex items-center justify-between bg-[#F0F0F0] block mt-[24px] px-4">
+        <header className="w-[1240px] h-[48px] flex items-center justify-between bg-[#FFFFFF] block mt-[24px] px-4">
             <h1 className={`${styles.integral} font-bold text-[32px] cursor-pointer`}>SHOP.CO</h1>
             <nav className="flex gap-6">
                 <Link href={"#"} className={`${styles.satoshi}flex items-center gap-1`}>Shop 

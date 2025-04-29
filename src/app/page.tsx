@@ -1,6 +1,10 @@
 import Image from "next/image"
 import styles from './fonts.module.scss'
 import Newarrivals from "./components/Newarrivals";
+import Topselling from "./components/Topselling";
+import Browsestyle from "./components/browsestyle";
+import Customers from "./components/customers";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -88,6 +92,10 @@ export default function Home() {
 
         </div>
         <Newarrivals />
+        <Topselling />
+        <Browsestyle />
+        <Customers />
+        <Footer />
       </>
   );
 }
