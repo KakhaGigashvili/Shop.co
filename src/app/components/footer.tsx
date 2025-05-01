@@ -1,4 +1,4 @@
-import styles from '../fonts.module.scss'
+import styles from '../styles.module.scss'
 import Image from "next/image"
 
 export default () => {
@@ -33,10 +33,10 @@ export default () => {
                             We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
 
                             <div className='flex justify-start mt-[35px] gap-[12px] mr-[114px]'>
-                                <Image alt="twitter" src="/image/x.png" width={28} height={28} />
-                                <Image alt="twitter" src="/image/fb.png" width={28} height={28} />
-                                <Image alt="twitter" src="/image/instagram.png" width={28} height={28} />
-                                <Image alt="twitter" src="/image/github.png" width={28} height={28} />
+                                <Image alt="x" src="/image/x.png" width={28} height={28} />
+                                <Image alt="fb" src="/image/fb.png" width={28} height={28} />
+                                <Image alt="instagram" src="/image/instagram.png" width={28} height={28} />
+                                <Image alt="github" src="/image/github.png" width={28} height={28} />
                             </div>
                         </div>
    
@@ -73,7 +73,21 @@ export default () => {
                             </div>
                 
                     </div>
+
+            <div className="border border-[#0000001A] w-[1240px] mt-[50px] ml-[50px] mr-[100px]"></div>
+
+            <div className="flex justify-between mt-[20px]">
+                <h4 className={`${styles.satoshi} text-[#00000099] font-normal mt-[5px] ml-[100px]`}>Shop.co © 2000-2023, All Rights Reserved</h4>
+                <div className="flex gap-[12px] mr-[100px]">
+                    <Image alt="visa" src="/image/visa.png" width={46} height={30} />
+                    <Image alt="mastercard" src="/image/master.png" width={46} height={30} />
+                    <Image alt="paypal" src="/image/paypal.png" width={46} height={30} />
+                    <Image alt="apple" src="/image/apple.png" width={46} height={30} />
+                    <Image alt="gplay" src="/image/gplay.png" width={46} height={30} />
+                </div>
+            </div>  
         </div>
+        
         </footer>
     )
 }

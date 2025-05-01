@@ -1,6 +1,6 @@
 import { Card } from "antd"
 import Meta from "antd/es/card/Meta"
-import styles from '../fonts.module.scss'
+import styles from '../styles.module.scss'
 import Image from "next/image"
 import Star from "./star"
 

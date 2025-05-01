@@ -1,0 +1,47 @@
+.container{
+    width: 100%;
+}
+
+.signup{
+    background-color: #000000;
+    
+}
+
+.integral {
+    font-family: 'Integral CF';
+}
+
+.satoshi {
+    font-family:'Satoshi Variable'
+}
+
+@media (max-width: 390px) {
+
+    .vector{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .integral {
+        font-family: 'Integral CF', sans-serif;
+      }
+      
+      .satoshi {
+        font-family: 'Satoshi', sans-serif;
+      }
+      
+      .search {
+        font-family: 'Satoshi', sans-serif;
+        &::placeholder {
+          color: #00000099;
+        }
+      }
+      
+      .sicon {
+        pointer-events: none;
+      }
+
+  }
