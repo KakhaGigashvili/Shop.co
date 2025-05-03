@@ -4,7 +4,7 @@
 
 .signup{
     background-color: #000000;
-    
+
 }
 
 .integral {
@@ -14,6 +14,72 @@
 .satoshi {
     font-family:'Satoshi Variable'
 }
+
+// animation
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 200px;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.box {
+  min-width: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  width: 12rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+
+  &:hover{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+}
+
+.arrowIcon {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
 
 @media (max-width: 390px) {
 
@@ -28,18 +94,18 @@
     .integral {
         font-family: 'Integral CF', sans-serif;
       }
-      
+
       .satoshi {
         font-family: 'Satoshi', sans-serif;
       }
-      
+
       .search {
         font-family: 'Satoshi', sans-serif;
         &::placeholder {
           color: #00000099;
         }
       }
-      
+
       .sicon {
         pointer-events: none;
       }

@@ -1,20 +1,20 @@
 import Image from "next/image"
-import styles from '../styles.module.scss'
+import styles from '../../styles.module.scss'
 
 export default () => {
 
     return(
         <>
-    <div className="bg-[#F2F0F1] h-[663px] flex justify-between w-full px-[100px] mt-[24px]">
+    <div className="bg-[#F2F0F1] h-[663px] flex justify-center w-full px-[100px] mt-[24px]">
       <div>
-      <h1 className={`${styles.integral} max-w-[577px] h-[173px] font-bold text-[64px] mt-[103px] font-integral leading-[64px]`}> 
+      <h1 className={`${styles.integral} max-w-[577px] h-[173px] font-bold text-[64px] mt-[103px] font-integral leading-[64px]`}>
         FIND CLOTHES THAT MATCHES YOUR STYLE </h1>
         <p className={`${styles.satoshi} text-base font-normal font-integral mt-[24px] leading-[22px] w-[545px] h-[33px]`}>
-          Browse through our diverse range of meticulously crafted garments, 
-          designed to bring out your individuality and cater to your 
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your
           sense of style.</p>
-          <button 
-          className={`${styles.satoshi} 
+          <button
+          className={`${styles.satoshi}
           mt-8 bg-[#000000] text-white w-[210px] h-[52px] rounded-[62px] cursor-pointer`}>
             Shop Now
           </button>
@@ -33,40 +33,42 @@ export default () => {
               </div>
           </div>
       </div>
-      <Image src={'/image/mphoto.jpg'} 
-      alt={"homepage photo"} 
+      <Image src={'/image/mphoto.jpg'}
+      alt={"homepage photo"}
       width={400}
       height={200}
       className= "object-cover"
       />
     </div>
-        <div className= "flex justify-evenly items-center bg-[#000000] w-full h-[122px]">
-        
-        <div>
-        <Image src={'/image/versache.png'} 
-        alt={"versache"} 
+        <div className= {`${styles.wrapper} flex justify-evenly items-center bg-[#000000] w-full h-[122px]`}>
+
+        <div className={`${styles.track}`}>
+
+        <div className={`${styles.box}`}>
+        <Image src={'/image/versache.png'}
+        alt={"versache"}
         width={167}
-        height={33} 
+        height={33}
         className="w-[167px] h-[33px]" />
         </div>
 
-        <div>
-        <Image src={'/image/zara.png'} 
-        alt={"zara"} 
+        <div className={`${styles.box}`} >
+        <Image src={'/image/zara.png'}
+        alt={"zara"}
         width={167}
-        height={33} 
+        height={33}
         className="w-[167px] h-[33px]" />
         </div>
 
-        <div>
-        <Image src={'/image/gucci.png'} 
-        alt={"gucci"} 
+        <div className={`${styles.box}`} >
+        <Image src={'/image/gucci.png'}
+        alt={"gucci"}
         width={167}
-        height={33} 
+        height={33}
         className="w-[167px] h-[33px]" />
         </div>
 
-        <div>
+        <div className={`${styles.box}`} >
         <Image
           src={'/image/prada.png'}
           alt={"Prada logo"}
@@ -76,7 +78,7 @@ export default () => {
           />
           </div>
 
-          <div>
+          <div className={`${styles.box}`} >
         <Image
           src={'/image/calvin-klein.png'}
           alt={"Calvin Klein logo"}
@@ -86,6 +88,7 @@ export default () => {
           />
           </div>
 
+          </div>
         </div>
     </>
         )

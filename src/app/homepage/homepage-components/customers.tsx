@@ -1,9 +1,9 @@
 'use client'
 
-import styles from '../styles.module.scss'
+import styles from '../../styles.module.scss'
 import Image from "next/image"
 import { useState } from "react";
-import Star from './star';
+import Star from '../../components/star';
 
 export default () => {
 
@@ -16,7 +16,7 @@ export default () => {
     ];
 
     const [startIndex, setStartIndex] = useState(0);
-    
+
     const visibleCount = 3;
 
     const handleNext = () => {
@@ -35,19 +35,20 @@ export default () => {
 
     return(
         <>
-            <h2 className={`${styles.integral} ml-[100px] font-bold text-5xl mt-[80px]`}>OUR HAPPY CUSTOMERS</h2>
+
         <div>
+            <h2 className={`${styles.integral} ml-[330px] font-bold text-5xl mt-[80px]`} >OUR HAPPY CUSTOMERS</h2>
 
-        <div className="flex justify-end gap-[15px] mb-[40px] mr-[100px]">
+            <div className="flex justify-end gap-[15px] mb-[40px] mr-[330px]">
 
-            <button onClick={handlePrev} className="hover:cursor-pointer">
-            <Image src="/image/left.png" alt="left" width={15} height={18} />
-            </button>
+                <button onClick={handlePrev} className="hover:cursor-pointer">
+                <Image src="/image/left.png" alt="left" width={15} height={18} />
+                </button>
 
-            <button onClick={handleNext} className="hover:cursor-pointer">
-            <Image src="/image/right.png" alt="right" width={15} height={18} />
-            </button>
-            
+                <button onClick={handleNext} className="hover:cursor-pointer">
+                <Image src="/image/right.png" alt="right" width={15} height={18} />
+                </button>
+
         </div>
 
             <div className="flex gap-5 justify-center">

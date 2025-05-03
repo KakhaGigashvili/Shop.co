@@ -1,15 +1,15 @@
 import { Card } from "antd"
 import Meta from "antd/es/card/Meta"
-import styles from '../styles.module.scss'
+import styles from '../../styles.module.scss'
 import Image from "next/image"
-import Star from "./star"
+import Star from "../../components/star"
 
 export default () => {
     return(
         <>
         <h2 className={`${styles.integral} text-center font-bold text-5xl mt-[72px]`}>New Arrivals</h2>
         <div className="flex justify-center items-center pt-[55px] gap-[20px]">
- 
+
         <Card
         style={{width: 300, height: 300}}
         cover={<Image alt="t-shirt" width={296} height={298} src="/image/clothes/t-shirt.png" />}
@@ -31,9 +31,9 @@ export default () => {
         <Star count={3.5} />
         <p className="ml-2">3.5/<span className="text-[#00000099]">5</span></p>
         </div>
-        <p className={`${styles.satoshi} font-bold text-2xl`}>$240 
+        <p className={`${styles.satoshi} font-bold text-2xl`}>$240
             <span className="text-[#00000099] line-through ml-2">$260</span>
-            <span className="text-[#FF3333] 
+            <span className="text-[#FF3333]
             bg-[#FF33331A] text-xs ml-3 pl-[13.5px] pr-[13.5px] pt-[6] pb-[6] rounded-[62px]">20%</span>
             </p>
             </Card>
@@ -59,9 +59,9 @@ export default () => {
             <Star count={4.5} />
             <p className="ml-2">4.5/<span className="text-[#00000099]">5</span></p>
             </div>
-            <p className={`${styles.satoshi} font-bold text-2xl`}>$130 
+            <p className={`${styles.satoshi} font-bold text-2xl`}>$130
             <span className="text-[#00000099] line-through ml-2">$160</span>
-            <span className="text-[#FF3333] 
+            <span className="text-[#FF3333]
             bg-[#FF33331A] text-xs ml-3 pl-[13.5px] pr-[13.5px] pt-[6] pb-[6] rounded-[62px]">30%</span>
             </p>
         </Card>

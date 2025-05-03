@@ -3,8 +3,8 @@ import Image from "next/image"
 
 export default () => {
     return (
-        <footer className="relative min-h-screen w-full">
-            <div className="absolute bottom-0 left-0 w-full h-[75%] bg-[#F0F0F0] z-0" />
+        <footer className="relative min-h-screen w-full flex justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[80%] bg-[#F0F0F0] z-0" />
 
             <div className="relative z-10">
                 <div className="flex justify-center">
@@ -39,7 +39,7 @@ export default () => {
                                 <Image alt="github" src="/image/github.png" width={28} height={28} />
                             </div>
                         </div>
-   
+
                             <div className='mr-[114px]'>
                                 <h3 className={`${styles.satoshi} font-medium `}>Company</h3>
                                 <p className={`${styles.satoshi} text-[#00000099] font-normal mt-[26px] font-normal`}>About</p>
@@ -71,7 +71,7 @@ export default () => {
                                 <p className={`${styles.satoshi} text-[#00000099] font-normal mt-[19px]`}>How to - Blog</p>
                                 <p className={`${styles.satoshi} text-[#00000099] font-normal mt-[19px]`}>Youtube Playlist</p>
                             </div>
-                
+
                     </div>
 
             <div className="border border-[#0000001A] w-[1240px] mt-[50px] ml-[50px] mr-[100px]"></div>
@@ -85,9 +85,9 @@ export default () => {
                     <Image alt="apple" src="/image/apple.png" width={46} height={30} />
                     <Image alt="gplay" src="/image/gplay.png" width={46} height={30} />
                 </div>
-            </div>  
+            </div>
         </div>
-        
+
         </footer>
     )
 }

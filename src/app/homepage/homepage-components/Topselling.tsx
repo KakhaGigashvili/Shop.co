@@ -1,8 +1,8 @@
 import { Card } from "antd"
 import Meta from "antd/es/card/Meta"
-import styles from '../styles.module.scss'
+import styles from '../../styles.module.scss'
 import Image from "next/image"
-import Star from "./star"
+import Star from "../../components/star"
 
 export default () => {
     return(
@@ -18,9 +18,9 @@ export default () => {
         <Star count={4.5} />
         <p className="ml-2">4.5/<span className="text-[#00000099]">5</span></p>
         </div>
-        <p className={`${styles.satoshi} font-bold text-2xl`}>$212 
+        <p className={`${styles.satoshi} font-bold text-2xl`}>$212
             <span className="text-[#00000099] line-through ml-2">$232</span>
-            <span className="text-[#FF3333] 
+            <span className="text-[#FF3333]
             bg-[#FF33331A] text-xs ml-3 pl-[13.5px] pr-[13.5px] pt-[6] pb-[6] rounded-[62px]">20%</span>
             </p>
             </Card>
