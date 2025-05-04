@@ -4,7 +4,7 @@ import Image from "next/image"
 export default () => {
     return(
         <div>
-            <div className="relative w-[554px] mb-[30px]">
+            <div className="relative w-[554px] mb-[40px] mt-[40px]">
             <span className="absolute top-[-10px] left-1/2 transform -translate-x-1/2 bg-white px-2 text-black text-sm z-10">
             or
             </span>

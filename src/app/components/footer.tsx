@@ -19,7 +19,7 @@ export default () => {
                                     className={`${styles.satoshi} w-full h-full bg-transparent outline-none text-black`} />
                             </div>
 
-                            <button className={`${styles.satoshi} font-medium w-[349px] h-[46px] rounded-[64px] text-base text-[#000000] mt-[14px] bg-[#FFFFFF] cursor-pointer`}>
+                            <button className={`${styles.satoshi} font-medium w-[349px] h-[46px] rounded-[64px] text-base text-[#000000] mt-[14px] bg-[#FFFFFF] cursor-pointer`} >
                                 Subscribe to Newsletter
                             </button>
                         </div>

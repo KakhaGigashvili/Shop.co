@@ -11,8 +11,11 @@
     font-family: 'Integral CF';
 }
 
-.satoshi {
-    font-family:'Satoshi Variable'
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 // animation
@@ -47,6 +50,12 @@
 
 .dropdownWrapper {
   position: relative;
+
+  &:hover .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
 }
 
 .dropdown {
@@ -64,12 +73,6 @@
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 10;
-
-  &:hover{
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
 }
 
 .arrowIcon {
